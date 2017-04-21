@@ -2,9 +2,10 @@ Name:
 Scale a matrix
 
 Statement:
-<p>Given two integers representing the rows and columns \( \left ( m \times n \right ) \), and then the subsequent \( m \) rows of \( n \) elements, followed by one more integer \( c \).
-
-Multiply every entry of the matrix by \( c \) and print the result.
+<p>Given two positive integers \( m \) and \( n \),
+\( m \) lines of \( n \) elements, giving an \( m \times n \) matrix \( A \),
+followed by one integer \( c \),
+multiply every entry of the matrix by \( c \) and print the result.
 
 Test:
 3 4
