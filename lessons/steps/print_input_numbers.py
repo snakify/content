@@ -403,13 +403,13 @@ name = input()  # read a single line and store it in the variable "name"
 print('Hi ' + name + '!')
     ''',
     'input_data': '''
-John
+YOURNAME
 ''',
     "instructions": '''
 Write your own name in the input section! Let the program greet you!
 ''',
-    "checker": "return stdin != 'John';",
-    'expected_output': 'Hi John!',
+    "checker": "return stdin != 'YOURNAME';",
+    'expected_output': 'Hi YOURNAME!',
 },
 
 
