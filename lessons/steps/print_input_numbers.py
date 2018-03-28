@@ -244,7 +244,7 @@ Scott + Mary = peace, love and death metal
  {
     "header": """Step by step""",
     "text": """
-You've already seen this code, but you haven't seen the might of our visualizer yet. To do it, set the tick "step by step" on and then click "Run":
+You've already seen this code, but you haven't seen the might of our visualizer. To do so, turn on "step by step", click "Run", then use "Forward" to run the code one line at a time:
 
 """,
     'program': '''
@@ -260,7 +260,7 @@ print(3 * 7, (17 - 2) * 8)
 ''',
     'highlight': "$('.visualizer_explain_mode').addClass('snakify-blinking');",
     'allfine':
-'''Impressed? You shall always execute programs line by line when you need to keep track of all the variables. Professional coders call it <em>debugging</em>.''',
+'''Impressed? You should always execute programs line by line when you need to keep track of all the variables. Professional coders call it <em>debugging</em>.''',
 },
 
 
