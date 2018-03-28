@@ -337,9 +337,11 @@ print(input())
  {
     "header": """Variables""",
     "text": """
-Writing a complex program, you usually can't print the answer of your calculation right away. You use <em>variables</em> to keep intermediate results there.
+When writing a complex program, you usually can't print the answer of your calculation right away. Instead you use <em>variables</em> to store intermediate results.
 
-Look at the code section. To the left of the assignment operator* we put a name of variable (in this case, <code>a</code>). The name could be a string of latin characters mixed with numbers, but should not start with a number. So, <code>much3q1</code> is a valid name for a variable, and <code>2pac</code> is not.
+Look at the code section. The first line has three parts: a = 3
+
+To the left of the assignment operator* we put a name of variable, in this case, <code>a</code>. The name can be any string of latin characters mixed with numbers and the underscore _ but cannot start with a number. So, <code>much3q1</code> is a valid name for a variable, and <code>2pac</code> is not.
 
 To the right of the assignment operator* we put any expression that Python can evaluate. It can be <code>3</code> as in the code below, or it can be, say, <code>1 + (2 ** 8) % 5</code>.
 
