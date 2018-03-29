@@ -441,16 +441,15 @@ print(s)
 
 
  {
-    "header": """Oops: you summed strings, not numbers""",
+    "header": """Oops: you added strings, not numbers""",
     "text": """
 After running the previous example we can see that it prints <code>57</code>. As we were taught in school,
 <code>5&nbsp;+&nbsp;7</code> gives <code>12</code>. What happened?
 
-So, the program works badly, and it is important to understand why.
+So, the program does not give the expected result, and it is important to understand why.
 
-The reason is, in the line <code>s&nbsp;=&nbsp;a&nbsp;+&nbsp;b</code> Python has <i>summed</i> two strings, rather than two numbers.
-The sum of two strings in Python works as follows: they are just glued one after another. It's also sometimes
-called <em>string concatenation</em>.
+The reason is, in the line <code>s&nbsp;=&nbsp;a&nbsp;+&nbsp;b</code> Python has <i>joined</i> two <b>strings</b>, rather than 
+adding two <b>numbers</b>. Applying + to two strings in Python just glues one after the other. This is called <em>string concatenation</em>.
 
 """,
     "program": '''
@@ -464,7 +463,7 @@ print(s)
 7
 ''',
     "instructions": '''
-Use two another numbers as inputs (modify the input section), and then watch they are glued to each other, not summed :(
+Put two different numbers into the 'input' section, and then watch as they are glued to each other, not added :(
 '''},
 
 
@@ -551,7 +550,7 @@ To cast the string of digits into an integer number, we can use the function <c
  {
     "header": """Summing numbers, not strings""",
     "text": """
-Using the magic of <code>int()</code>, we can now fix our incorrent program to sum the two numbers:
+Using the magic of <code>int()</code>, we can now fix our incorrect program to sum the two numbers:
 """,
     'program': '''
 a = int(input())
