@@ -1,23 +1,41 @@
 {% section "Syntax" %}
-<p>All the programs in the first lesson were executed sequentially, line by line.
-No line could be skipped.
+<p>All the programs in the first lesson were executed line by line. There was no way to make a line optional.
+Often we would like to do something only if certain conditions apply, like only taking an umbrella with you if it's raining.
 
-<p>Let's consider the following problems: for the given integer X determine
-its absolute value. If X&gt;0 then the program should print the value X,
-otherwise it should print -X. This behavior can't be reached using the sequential
-program. The program should conditionally select the next step. That's where the conditions help:
+Run this program (where the input sets is_raining to 'Y') then change the input to 'N' 
+and run it again to see the difference.
+
 {% program %}
-x = int(input())
-if x > 0:
-    print(x)
-else:
-    print(-x)
+is_raining = int(input("Is it raining today? (Y/N) "))
+print ('When you leave the house, remember to take your keys')
+
+if is_raining == 'Y':
+    print('and an umbrella.')
+
 {% inputdata %}
--273
+Y
+{% endinputdata %}
+{% endprogram %}
+    
+
+The indented code after the 'if' block colon (:) will only be executed if the input is 'Y', otherwise it is skipped.
+
+Sometimes you might want to do THIS or THAT, depending on the answer to a question, such as charging an older person
+a reduced price for their bus ticket, but full price for everyone else.
+
+{% program %}
+age = int(input("What is your age? "))
+if age >= 65:
+    print('Your ticket is half price.')
+else:
+    print('Your ticket is full price.)
+{% inputdata %}
+55
 {% endinputdata %}
 {% endprogram %}
 
-<p>This program uses a conditional statement <code>if</code>. After the <code>if</code>
+
+<p><b>Explanation:</b> This program uses a conditional statement <code>if</code>. After the <code>if</code>
 we put a condition <code>(x&nbsp;&gt;&nbsp;0)</code> following by a colon.
 After that we put a block of instructions which will be executed only if the condition
 is true (i.e. evaluates to <code>True</code>). This block may be followed by the word
