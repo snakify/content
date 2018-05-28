@@ -2,9 +2,9 @@ Name:
 The bowling alley
 
 Statement:
-In bowling, the player starts wtih 10 pins at the far end of a lane. The object is to knock all the pins down. For this exercise, the number of pins and balls will vary.
+In bowling, the player starts with 10 pins at the far end of a lane. The object is to knock all the pins down. For this exercise, the number of pins and balls will vary.
 
-Given the number of pins <i>N</i> and then the number of balls <i>K</i> to be rolled, followed by <i>K</i> pairs of numbers (one for each ball rolled), determine which pins remain standing after all the balls have been rolled.  The balls are numbered from 1 to <i>N</i> (inclusive) for this situation. The subsequent number pairs, one for each <i>K</i> represent the start to stop (inclusive) positions of the pins that were knocked down with each role.  Print a sequence of <i>N</i> characters, where <code>"I"</code> represents a pin left standing and <code>"."</code> represents a pin knocked down.  
+Given the number of pins <i>N</i> and then the number of balls <i>K</i> to be rolled, followed by <i>K</i> pairs of numbers (one for each ball rolled), determine which pins remain standing after all the balls have been rolled.  The balls are numbered from 1 to <i>N</i> (inclusive) for this situation. The subsequent number pairs, one for each <i>K</i> represent the start to stop (inclusive) positions of the pins that were knocked down with each roll.  Print a sequence of <i>N</i> characters, where <code>"I"</code> represents a pin left standing and <code>"."</code> represents a pin knocked down.  
 
 Test:
 10 3
